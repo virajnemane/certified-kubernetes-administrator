@@ -22,24 +22,31 @@ EOF
 sudo sysctl --system
 ```
 
-##### Step 3:Configuring Repo and Installation
+##### Step 3:Installation (Master+Worker)
 ```sh
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 cat <<EOF | sudo tee /etc/apt/sources.list.d/kubernetes.list
 deb https://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 apt-get update
-apt-get install -y kubelet kubeadm kubectl
+```
+
+##### Video Starts from here
+```sh
+apt-cache madison kubeadm
+apt-get install -qy kubeadm=1.18.0-00 kubelet=1.18.0-00 kubectl=1.18.0-00
 apt-mark hold kubelet kubeadm kubectl
-```
-
-##### Step 4: Initialize Cluster with kubeadm
-```sh
+kubeadm version
 kubeadm init --pod-network-cidr=10.244.0.0/16
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 ```
 
-##### Step 5: Install Network Addon (flannel)
+##### Upgrade Steps
 
 ```sh
-kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+apt-mark unhold kubelet kubectl
+apt-get update && apt-get install -y kubelet=1.19.1-00 kubectl=1.19.1-00
+apt-mark hold kubelet kubectl
+systemctl daemon-reload
+systemctl restart kubelet
 ```

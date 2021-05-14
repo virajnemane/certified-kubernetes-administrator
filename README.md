@@ -2,11 +2,8 @@
 
 This is a central document which contains all the commands and code files used throughout the video course. 
 
-https://www.udemy.com/course/certified-kubernetes-administrator/?couponCode=CKA-AUG-20
+https://www.udemy.com/course/certified-kubernetes-administrator/?couponCode=CKA-NOV-2020	
 
-# Important Note
-
-The GitHub Repository and the course are in the stage of upgradation to be in-tune with the new CKA certifications. You might see many changes within the repository this week.
 
 # Exam Domains
 
@@ -23,9 +20,9 @@ The GitHub Repository and the course are in the stage of upgradation to be in-tu
 
 
    [PlDa]: <https://github.com/zealvora/certified-kubernetes-administrator/tree/master/Domain%201%20-%20Core%20Concepts>
-   [PlDb]: <https://github.com/zealvora/certified-kubernetes-administrator/tree/master/Domain%202%20-%20Application%20LifeCycle%20Management>
-   [PlDc]: <https://github.com/zealvora/certified-kubernetes-administrator/tree/master/Domain%203%20-%20Networking>
-   [PlDe]: <https://github.com/zealvora/certified-kubernetes-administrator/tree/master/Domain%205%20-%20Security>
-   [PlDf]: <https://github.com/zealvora/certified-kubernetes-administrator/tree/master/Domain%206%20-%20Storage>
-   [PlDg]: <https://github.com/zealvora/certified-kubernetes-administrator/tree/master/Domain%207%20-%20Installation%2CConfiguration%2CValidation>
-   [PlDi]: <https://github.com/zealvora/certified-kubernetes-administrator/tree/master/Domain%209%20-%20Troubleshooting>
+   [PlDb]: <https://github.com/zealvora/certified-kubernetes-administrator/tree/master/Domain%202%20-%20Workloads%20%26%20Scheduling>
+   [PlDc]: <https://github.com/zealvora/certified-kubernetes-administrator/tree/master/Domain%203%20-%20Services%20and%20Networking>
+   [PlDe]: <https://github.com/zealvora/certified-kubernetes-administrator/tree/master/Domain%204%20-%20Security>
+   [PlDf]: <https://github.com/zealvora/certified-kubernetes-administrator/tree/master/Domain%205%20-%20Storage>
+   [PlDg]: <https://github.com/zealvora/certified-kubernetes-administrator/tree/master/Domain%206%20-%20Cluster%20Architecture%2C%20Installation%20%26%20Configuration>
+   [PlDi]: <https://github.com/zealvora/certified-kubernetes-administrator/tree/master/Domain%207%20-%20Troubleshooting>
